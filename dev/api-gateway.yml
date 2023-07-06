@@ -21,6 +21,10 @@ spring:
           uri: lb://ms-report
           predicates:
             - Path=/api/reports/**
+        - id: ms-wallet
+          uri: lb://ms-wallet
+          predicates:
+            - Path=/api/wallet/** 
             
 eureka:
   client:
